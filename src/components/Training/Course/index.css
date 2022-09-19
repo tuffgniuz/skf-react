@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 345px 100%;
+}
+
+.grid-container .content-container {
+  padding-top: 1.625rem;
+  padding-left: 9.375rem;
+}
+
+.tree-container .tree-head {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.tree-node-wrapper {
+  /* border-bottom: 1px solid var(--dark-100); */
+  min-height: 70px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.tree-node-title {
+  font-weight: 600;
+}
+
+.tree-node-wrapper:hover {
+  background-color: var(--dark-400);
+  color: var(--light-400);
+}

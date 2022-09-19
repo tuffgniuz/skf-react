@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap");
+
+:root {
+  /* colors */
+  --dark-600: #020202;
+  --dark-400: #282828;
+  --dark-100: #4e4e4e;
+  --light-400: #fcfcfc;
+
+  /* font families */
+  --primary-ff: "Reem Kufi Fun", sans-serif;
+  --monospace-ff: "B612 Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-400);
+  color: var(--dark-400);
+  font-family: var(--primary-ff);
+  font-size: 16px;
+}
+
+a {
+  color: var(--dark-100);
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: var(--dark-600);
+}
+
+ul {
+  list-style: none;
+}
+
+/* TEXT */
+
+.brand {
+  font-size: 1.4rem;
+}
+
+.title-1 {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.text-vertical-up {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* COMPONENTS */
+
+.container {
+  width: 996px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.btn {
+  align-self: flex-start;
+  border: none;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-light {
+  background-color: var(--light-400);
+}
+
+@media (min-width: 1825px) {
+  /** RESET **/
+  p {
+    font-size: 1.5rem;
+  }
+
+  /** TEXT **/
+
+  .title-1 {
+    font-size: 5rem;
+  }
+
+  /** BUTTONS **/
+
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+
